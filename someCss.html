@@ -1,10 +1,74 @@
+  
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    .container {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+    
+    .centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .margin {
+          margin-top: 20px;
+          margin-bottom: 20px;
+          margin-right: 20px;
+          margin-left: 20px;
+        }
+    p.dotted {border-style: dotted;}
+
+        #rcorners {
+    border-radius: 25px;
+    border: 2px solid;
+    padding: 20px; 
+    width: 200px; 
+            }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="anExternal.css">
+
     <title>Amber's Site</title>
   </head>
+  
   <body>
-    <h1>Amber</h1>
-    <h2>About Me</h2>
+    <h1>Some Css</h1>
+    <h2>Level 1: Newbie</h2>
+    <h3>1. Two paragraphs that each have a different font:</h3>
+    <p style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu scelerisque felis imperdiet proin fermentum. Quis viverra nibh cras pulvinar mattis nunc sed blandit libero. Scelerisque mauris pellentesque pulvinar pellentesque habitant. Quis auctor elit sed vulputate. Donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum arcu. Ullamcorper eget nulla facilisi etiam dignissim diam quis. Suspendisse interdum consectetur libero id. Porta nibh venenatis cras sed felis eget. Cursus in hac habitasse platea dictumst.</p>
+    <p style="font-family: Arial, Helvetica, sans-serif;">Sit amet porttitor eget dolor morbi non arcu risus. Ornare arcu odio ut sem nulla pharetra diam. Eget est lorem ipsum dolor. Donec ultrices tincidunt arcu non sodales neque. Libero volutpat sed cras ornare arcu dui vivamus arcu. Habitant morbi tristique senectus et netus et. Sit amet consectetur adipiscing elit duis tristique sollicitudin nibh sit. Semper risus in hendrerit gravida rutrum. Sit amet nisl suscipit adipiscing bibendum. Lectus proin nibh nisl condimentum id venenatis a condimentum vitae. Erat nam at lectus urna duis convallis convallis. Tellus rutrum tellus pellentesque eu tincidunt tortor aliquam nulla facilisi. Turpis cursus in hac habitasse platea dictumst quisque sagittis. Duis ut diam quam nulla porttitor massa id neque aliquam. Mauris vitae ultricies leo integer malesuada.</p>
+    <h3>2. Two pictures that were originally different sizes, resized to 50px by 50px:</h3>
+    <img src="https://i.pinimg.com/originals/44/86/16/4486167e8fec4d4438a12707da02537f.jpg" style="width:50px;height:50px;">
+    <img src="https://i.pinimg.com/originals/f0/a6/c4/f0a6c42ae665972eaafc00484612934b.jpg" style="width:50px;height:50px;">
+    <h3>3. One more unique CSS command that was not discussed in the workshop (rounded image corners):</h3>
+    <img src="https://i.pinimg.com/originals/44/86/16/4486167e8fec4d4438a12707da02537f.jpg" style="width:150px;height:150px;border-radius:50%">
+    <img src="https://i.pinimg.com/originals/f0/a6/c4/f0a6c42ae665972eaafc00484612934b.jpg" style="width:150px;height:150px;border-radius:50%">
+    
+    <h2>Level 2: Apprentice</h2>
+    <h3>1. Text that is centered on a photo:</h3> 
+    <div class="container">
+        <img src="https://cdn.shopify.com/s/files/1/0978/4804/products/21-light-blue_0acb1a7c-36af-4be2-8a43-2d5659f7d86f_1024x1024.jpg?v=1497585737" alt="Blue" style="width:50%;">
+        <div class="centered">Centered Text</div>
+      </div>
+    <h3>2. A photo with 20 pixel margins on each side:</h3>
+    <div class="margin">
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMQDw8PEBIVEhUPDw8PDw8VFRUQEA8NFREWFhUVFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OFw8QGi0fHR0tLSstLS0tLSstLS0tNy0tLS0tLS0tLS0tLS0tLTc3LS0tLS0tLS03LTctLS03Ny0tLf/AABEIAKABOgMBIgACEQEDEQH/xAAaAAACAwEBAAAAAAAAAAAAAAADBAABAgUG/8QAMRAAAgEDAwMDAwIFBQAAAAAAAAECAxESBDFBEyFRFGFxBYGRwfBiobHh8RUiMkJS/8QAGgEAAwEBAQEAAAAAAAAAAAAAAAECAwQFBv/EACMRAAIDAAICAwADAQAAAAAAAAABAhESIUEDE1FhcSIxgQT/2gAMAwEAAhEDEQA/APCWM2DuBMD7Y+b0AsSwZwM4hQ9A7EsEsSw6HZixLG0i8QoVg7F2CKBpUx0LQKxMRiNFhI6V+BcC0KYlqA9DRSe0WHj9Mly0hOSQXJ9HMVMtUzrR0MFvJv4NKnBbR+7FtBTOTGk3sgsdK+ex0ZNeUjEqsF7hbF/omtP8v+QSOnfC/UI9Zb/jFFetnw7fCH/Im0bjoZPcLD6euWkK9Wb/AOzNRoyfJLT+RqS6Q6tLTW8kESp8dxWGkvuxvTaRL3M3+msW30EhbhBJNvZDFKil7fIdRhzL7GTkbJHIqQl7IXqZ+TvVI0vFxPUVI8WKjP6JlH7OJUvy2BlJscr1I37oD1I/B0L8OZ/orJMqNO/AxOrHwY6zWxXJJS0z37GXS9y3V+TFSTbCmOynZA5TI0TAdDVGGRRDYGWxUPXwCcTNjcpGbBRSY0423IkjtVNKnwv6C1TQ+CFNMlwaEo0k+TMtO+B2OhYRUku249fAlFnKdB+H+CKgzsYsy8VuGx19nNhpWxiGiXLCS1NtkLSqtj/kybX6NR08FuzS6aELsoMfYa+jqerpri5f+pxW0Tl2JYPXEPZIfn9SbAS1bAYlqJShFEub+TUq8nyYcmzagXiOkToFYmIWxLjFZhRNxgTIjmIOQ0IpB6cl5EHIrIlxstNo6XqEjUNU/NjlZGozF60P2SOzCbfP6oNLb3OTQ1WPkM9c7bEPxs0XlVcjnd8NCs77uPuAlrpvkwtTPyxrxtEy8iCTmne6FJy9l+oaWokCfwaJUZuVmE78Be9ttv5srKXn8dimpPkdAZmwcpBum/JpafyHAJi0e4SXZD+m06Q1S00XJX2Ic0i1Bs4TpSfcktO1ueh+oxUF/tSsjh1W27scJa5HJZ4AdIrFG2isPYoVs9vPSxAVKURnBv8AyY6L8Hno7GJzghedSKOhU0bfAtP6a/BrFx+TKSl0c+sm9hSdN8nWeha49vuYlo5bWNYySMJQbOQ6ZWB1X9Pl4JH6bLlF+yJOZfByumEpadyZ26X05W2/IRaFrs+3wS/Kil4pHDlprbdyvTnfX0ty+B7T/SEu/a/lkvzpFLwSZ5inoJP2X9Q8/pTS5+/ZHrVpox3s/BztTPvtczXncnwaPwRiuTzdbRyhvb7C7Ot9Q2/fY5rgdUHa5OWSSdAbEsFwCU9O5bIqxCrRVhqtRxbXgxgA7F8SYh8C8BhYviXiGxLUACwOBdmFwLwAVgkjVzeBfTEIEQMqZapCAAQY6JtUAsBTubjcbjp/YNGh8EuSKUWxKKYenK3Iz0l4NRp+xDkmWotGYXe23PgUr6dXd3+Dpxpu2xUqCe6IUqZq1aOFKK4RWLO76ZcR+7NrR+5ftRn6mez/ANNUdl9wfpF4R151Y+AMmvCPFU5HrOKOXLR2eyJGjbi/2HZVrcGXqltZmlyJpAo0E90vwZnooe39wqqXe9v1B1qnnbzbuCuxOjPoI8v7bAZ6FLYzLUNXcXdeC4fUbK2PfzuWlMnUQMqD8bewxR0yf/J2BvXRe7KnqYe7KakTcQ9XSwXdXfHbYS1FRx7JWX8y5a/tZKwpV1D/ALlQhLsmU10ZlN837l/7bpN/PkTlUb5KbRvgx9gbXRp22b/U4tSmr9kdF1e1gMjaCyYeRqQpGiMKbisY9u3fyWmEyX73KfJEeP6OfOhyC6Y7Oo9gWJomzNv4AdMnTD4kxHYrA4EwC4l4gIGqZfTN4kxEBjFEsgmJpREMFGPsGhSCRgEhBEtmkUCdM0qVtxlUlwbjRfgzcjVRFMfYnZb2Q66Pl2KSgu7V/di0OhKVThJtm0pc2ibnWyvbt4sCwkyqJsJl7/ckJc7mqOkvuGWm+CXRa0wE5vyDu/D/AAdCOljywvTgTpFZbO7PTztdysL1Z48tnRrUbilTSeThjJdnZJPoQlrH4BvVysMVtM+BOpSfg3ioswk5E9W/33I9ZJgnTZTiaZiRpmnqZFLUMzYvEdInTMydy13KaMlUKzTlYG3ctkjYdEtgnE2qat+2FuvBTba7Idi4FpQBSgMYMw6TZaZnIWcSmhtac1GgvI9InDEMSYDs6SBOCKUiXGhbEmIw4FYDskBgTEYUC8AsdC2BpUxhQLUBaCgEaIWNALGmGhSIcjWMQUKKCQhbgYhQDRoGTkbKICESTGlRL9N8EaRpTEXZJ2V2AdFy3Op6f4Mul8DUyXCznw06QZQa4Dyh7g5Q/iHdiqjFvLKbXkjj8GJIdBoxUn4MdRm5eyKxLSIbZ7qTAyV+QDr3KdU8tQaPQ0FcEDnRTBSrGPUPyWoslyRitpFwJ1NPYec2wE7s1i2jKVCTpmJRGpRBTibJmTQtiViGsZxLTIYFxKaGVQbNrShpCyxJG4psZdCwSFOwOSGosA6PhMpaeT2Huyd3ZfvwR61LZfcjUui8x7FvQztfjyK1YW5uM6is5Pd/AB0i432ZyroXaKwD4FqmaWZ0L4EwGlp34Nx0r5FtDwxNRLxOhDSX4aNvRJXb7/1J9iK9bOaomlEaradLb8bsE6L8P8DUkxOLQNOxrqEcGTAOAtk6zLVcz0yYBSDTDLVF+pAYEcRZQ9yD+oKdYBYlgyh7YR1TDqFYmXAdIlyZbmV1CnArEqkLTLdQzmTErEKQtM73dFSrG5IG6Rxquzsdg3WZlzNukVgWqIdmqdWxvr+ECxIKkO2acrvu/wAbg5U1u2asU2NEtg8UWrFtExKEaVXgw5vyXYgUFsrMq78l2JgHAuTErfJnEPGjcZpaPur/AIE5pDUWzn4mo0W9kduGmj4QWNKK4Rm/+j4Ra8JxYaNu/Z9gtL6fJ8fnsdqMktrEdaxm/PLo0XhiJUNG1ul7DC07COuYlWXkycpMuooi0y3LdGPsBlURFUjyOpBaCKjDyipUoWtdA5yjwCqVF/5Q0mJtFVaMFukwCUHwl9zTq/woDNX4RtFPsybRmtTh/gXlSXkNgR0zVOuzN89C3TKdMa6RnplaJyLYlYjDgU4FaFkDiZxD4ExDQqAYFYB8SYj0FC+BWAziVYNCydrplOmM2KaPP0d1CzpGJURloy0UpMloUdIw4DbRhxLUiWgCiU6YfEuw9CoUwKcBmSM4lKRNAMC8AuJMQ0FGFTRtRiTEmIWBtSSNqp7gcSYk0irYbqe5OvYDYuwsoNM36hk6zMWJiOkFs06rM5MvEvAOA5M5FXCdMtUgtBTBXJ3DqibjSXkWkGWLWNRotjcVFG1JcEubKUBZaf2/Jr04w5mHVJ1JlUgL0xT0vlm5VvcDOV+Slol0VOnBC8orwEcSsTRcEMDYrENiTErRNAcSYhcSYjsVAcSsA2JMQsKOl1iusIubKc2Y+s19g86yMuqhLIq4/Wg2NusilUFWyZjwJSGZVEYdYWlVMOqUoA5DfVJ1BLqEVQeCdDuZXUQpKRlSYYDQ9mis0KdRmeowwLQ71ETqITzZM2PAaHc0V1UKubBtiwGh7qovqCMZM3GowwPQ11S1VE3UIqgYDQ6qhfVE1VI6wsBoa65fWEnULVQeA0O9YtVhHqFqoLA9DzrmHVFHVK6gYDQ5mZ6iFZSZhtjUBNjuaIpoSU2YdRjwFnQckjDqoSdVsxKYKArH+ui+qjmZFZMr1ho6nVRnrI5uRLh6xaO3KANwDykYyME2atA8SYhLopsdioBOAJ02N3Rh2KUhOIq4GXAb7FYryVoWRXEmI1giYoNhgWUTTiGdi00GgyAxJgMOKM3DQZA4lqIeyJihaDIHEpwDKxfYNBQviTEZsirIegyK4kxGHArANCoDiU4DGJFENBQriWojDpmcUPQZBF2CYlqIWKgSibUAiiaUROQ6MKmZdMPE1dE6ZVCmBpUrh20WmGgoTlpgM6LR07oFUsxqbBxRzcCmhucEBcTVMzaBFG2jIxH/2Q==">
+        </div>
+    <h3>3. Text with a border that uses dotted lines:</h3>
+        <p class="dotted">A dotted border.</p>
+    <h2>Level 3: Master</h2>
+    <h3>1. An external style sheet:</h3>
+        <a href="https://amberhsu-1637738.github.io/anExternal.css">https://amberhsu-1637738.github.io/anExternal.css</a>
+    <h3>2. A floated element:</h3>
+        <img src="data:image/jpeg;base64,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" style="float:right">
+    <br>
+        <h3>3. An element with rounded border corners:</h3>
+        <p id="rcorners">Rounded corners!</p>
   </body>
 </html>
